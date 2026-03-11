@@ -10,7 +10,7 @@ import psutil
 from vllm.logger import logger
 
 from vllm_ascend.utils import AscendDeviceType, get_ascend_device_type
-
+# print()
 MASK_BIT = 32  # Number of bits in a CPU affinity mask group
 MIN_CPUS_PER_NPU = 5  # 2(IRQ) + 1(main, at least 1 CPU) + 1(acl) + 1(release) = 5 CPUs per NPU
 ALLOWED_CPUS_PATH = "/proc/self/status"
